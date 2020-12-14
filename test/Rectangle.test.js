@@ -1,23 +1,25 @@
 const assert = require('assert');
 const Rectangle = require('../Rectangle.js');
-const {} = require('../Rectangle.js');
 
 describe('Rectangle', () => {
     
     it('is a square so TRUE', () => {
         const rectangle = new Rectangle(10, 10);
-        assert.strictEqual(isSquare(), true);
+        assert.strictEqual(rectangle.isSquare(), true);
     });
 
     it('is not a square so FALSE', () => {
-        assert.noStrictEqual(isSquare(), false);
+        const rectangle = new Rectangle(10, 5);
+        assert.strictEqual(rectangle.isSquare(), false);
     });
 
     it('gives the area', () => {
-        assert.strictEqual(capitalizeFirstLetters('z'), 'Z');
+        const rectangle = new Rectangle(10, 5);
+        assert.strictEqual(rectangle.getArea(), 50);
     });
 
     it('gives the perimeter', () => {
-        assert.strictEqual(capitalizeFirstLetters(''), '');
+        const rectangle = new Rectangle(10, 5);
+        assert.strictEqual(rectangle.getPerimeter(), 30);
     });
 });

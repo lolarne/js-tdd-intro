@@ -10,23 +10,17 @@ class Rectangle {
 
 
     isSquare() {
-        if (this.a === this.b) {
-            return true;
-        } else {
-            return false;
-        }
+        return this.a === this.b;
     }
 
 
     getArea() {
-        area = this.a * this.b;
-        return area;
+        return this.a * this.b;
     }
 
 
     getPerimeter() {
-        perimeter = this.a * 2 + this.b * 2;
-        return perimeter;
+        return this.a * 2 + this.b * 2;
     }
 }
 
